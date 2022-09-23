@@ -26,7 +26,6 @@ const App = () => {
         <Route exact path='/' element={<Navigate to='/map'/>}></Route>
         <Route exact path='/' element={<Navigation/>}>
             <Route exact path='/map' element={<Map/>}/>
-            <Route path='/signup' element={<Signup/>}/>
             <Route exact path='/search' element={<Search/>}/>
             <Route exact path='/appointments' element={<Agendamentos/>}/>
             <Route exact path='/favourites' element={<Favourites/>}/>
@@ -42,6 +41,7 @@ const App = () => {
       <Routes>
         <Route path='*' element={<Navigate to='/'/>}/>
         <Route path='/' element={<Authenticate/>}/>
+        <Route path='/signup' element={<Signup/>}/>
       </Routes>
     )
   }
