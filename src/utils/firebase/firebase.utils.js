@@ -10,7 +10,7 @@ const firebaseConfig = {
     appId: "1:112389775118:web:ac38e48eb26070ee66015f"
 };
 
-initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
 
 provider.setCustomParameters({
@@ -18,7 +18,7 @@ provider.setCustomParameters({
 });
 
 
-export const auth = getAuth();
+export const auth = getAuth(app);
 export const authenticate = signInWithEmailAndPassword() 
 export const signInWithGoogleRedirect = () => signInWithRedirect(auth, provider);
 export const signOutUser = async () => await signOut(auth);
