@@ -1,0 +1,42 @@
+
+*{
+   padding: 0;
+   font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+.cabecalho{
+    background-color: #6FBFBF;
+    height: 100px; 
+    display: flex;  
+    align-items: center;    
+    padding: 24px;
+}
+
+.cabecalho-imagem{
+
+    /* height: 72px; */
+
+}
+.cabecalho-menu{
+
+    display: flex;
+    gap: 32px;
+}
+
+
+.container, .centro{
+   
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+
+}
+
+@media (max-width: 767.98px) {
+
+    .cabecalho{
+        background-color: #6FBFBF;
+        height: 100px;
+       
+    }
+}

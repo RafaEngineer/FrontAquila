@@ -1,0 +1,55 @@
+
+.pesquisa{
+    width: 500px;
+        display: flex;
+        justify-content: center;
+        margin-top: -15px;
+        margin-left: 32%;
+}
+
+.servico{
+     display: inline-block;
+    /* justify-content: center; */
+    width:600px ;
+    margin-left: 30%;
+    margin-top: 5%;   
+        
+}
+
+img{
+    width: 200px;
+    height: 100px;
+}
+
+@media (max-width: 767.98px) {
+
+    .cabecalho{
+        background-color: #6FBFBF;
+        /* height: 100px; */
+        
+    }
+    .pesquisa {
+        
+        margin-left: 40px;
+        margin-top: -15px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .servico{
+        margin-top: 30px;
+        width:200px ;
+        margin-left: 30px;
+        margin-top: 10%;  
+        justify-content: center;  
+       
+     }
+
+     img{
+        width: 100px;
+        height: 50px;
+    }
+}
+
